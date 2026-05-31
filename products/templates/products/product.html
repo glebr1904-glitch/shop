@@ -38,6 +38,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Закрыть"></button>
                             </div>
+            {%for in %}
                             <div class="modal-body">
                                 <img src="{% static '/deps/images/goods/far_cry_3.jpg'%}"
                                     class="img-fluid" alt="Изображение 1">
@@ -47,10 +48,12 @@
                 </div>
             </div>
             <!-- Описание товара -->
+             
             <div class="card-body">
-                <p class="card-text">Цена: <strong>1299.00 руб.</strong></p>
+                <p class="card-text">Цена: <strong>{{product.price}}</strong></p>
                 <h5 class="card-title">Far cry 3</h5>
                 <p class="card-text">Гуляем по острову.</p>
+            {%endfor%}
                 <a href="#" class="btn btn-dark add-to-cart">Добавить в корзину</a>
             </div>
         </div>

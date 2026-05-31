@@ -1,0 +1,184 @@
+[
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "Far cry 3",
+        "slug": "far-cry-3",
+        "price": "1299.00",
+        "image": "image_products/far_cry_3_h7JQG9f.jpg",
+        "description": "Игра на острове.",
+        "discounts": 0,
+        "quantity": 989,
+        "category": 4
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "Diablo 3",
+        "slug": "diablo-3",
+        "price": "999.00",
+        "image": "image_products/diablo3.jpg",
+        "description": "Нужно победить владык преисподней",
+        "discounts": 0,
+        "quantity": 679,
+        "category": 5
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "Fahrenheit",
+        "slug": "fahrenheit",
+        "price": "499.00",
+        "image": "image_products/fahrenheit.jpg",
+        "description": "Становится холодно на земле. Давай",
+        "discounts": 0,
+        "quantity": 543,
+        "category": 7
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "Falout New Vegas",
+        "slug": "falout-new-vegas",
+        "price": "499.00",
+        "image": "image_products/fallout.jpg",
+        "description": "Казино на осколках мира",
+        "discounts": 0,
+        "quantity": 432,
+        "category": 5
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "God of War",
+        "slug": "god-of-war",
+        "price": "1499.00",
+        "image": "image_products/gow.jpg",
+        "description": "Чем занимается убийца богов в Скандинавии",
+        "discounts": 0,
+        "quantity": 349,
+        "category": 7
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "Mafia 2",
+        "slug": "mafia-2",
+        "price": "799.00",
+        "image": "image_products/mafia2.jpg",
+        "description": "Вписываемся в мафиозные разборки",
+        "discounts": 0,
+        "quantity": 293,
+        "category": 4
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "Max Payne 3",
+        "slug": "max-payne-3",
+        "price": "699.00",
+        "image": "image_products/maxpayne3.jpg",
+        "description": "Он стар, да удал",
+        "discounts": 0,
+        "quantity": 794,
+        "category": 4
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "Red dead Redemption 2",
+        "slug": "red-dead-redemption-2",
+        "price": "1399.00",
+        "image": "image_products/rdr2.jpg",
+        "description": "Как оно там на диком западе",
+        "discounts": 0,
+        "quantity": 685,
+        "category": 4
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "Resident Evil 2",
+        "slug": "resident-evil-2",
+        "price": "1099.00",
+        "image": "image_products/RE2_n5oseti.jpg",
+        "description": "Побегаем от зомби",
+        "discounts": 0,
+        "quantity": 432,
+        "category": 9
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "The Last of Us",
+        "slug": "the-last-of-us",
+        "price": "1699.00",
+        "image": "image_products/tlou.jpg",
+        "description": "Через всю Америку в постапокалиптическом мире",
+        "discounts": 0,
+        "quantity": 348,
+        "category": 9
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "Uncharted 3",
+        "slug": "uncharted-3",
+        "price": "899.00",
+        "image": "image_products/uncharted3.jpg",
+        "description": "Современный Индиана Джонс",
+        "discounts": 0,
+        "quantity": 864,
+        "category": 7
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "name": "The Witcher 3",
+        "slug": "the-witcher-3",
+        "price": "1199.00",
+        "image": "image_products/witcher3.jpg",
+        "description": "Геральд Геральд",
+        "discounts": 0,
+        "quantity": 753,
+        "category": 5
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "name": "Counter-Strike 2",
+        "slug": "counter-strike-2",
+        "price": "199.00",
+        "image": "image_products/cs2.jpg",
+        "description": "Спецназовцы против террористов",
+        "discounts": 0,
+        "quantity": 1890,
+        "category": 4
+    }
+}
+]

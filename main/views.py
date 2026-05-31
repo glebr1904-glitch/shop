@@ -1,18 +1,14 @@
 from django.shortcuts import render
-
+from products.models import Category,Product
 
 def index(request):
+    categories=Category.objects.all()
     context={
+        
         "title":"Главная страница",
         "header":"Магазин компьютерных игр Game zona",
-        # "games":[
-            # {'title':'Mainckraft','price':'349', 'amount':'930'},
-            # {'title':'PUBG','price':'349', 'amount':'1030'},
-            # {'title':'CS2','price':'349', 'amount':'130'},
-            # {'title':'Dota2','price':'199', 'amount':'30'},
-            # {'title':'CS 1.6','price':'549', 'amount':'150'},
-        # ],
-        # "genres":["Шутеры","RPG","Симулятор"]
+        "categories":categories,
+
     }
     return render(request,'main/index.html', context)
 
