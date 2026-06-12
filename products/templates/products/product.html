@@ -5,10 +5,10 @@
 
 {% block css %}
     <link rel="stylesheet" href="{%static 'deps/css/my_footer_css.css' %} ">
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/deps/favicon/apple-touch-icon.png'%}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/deps/favicon/favicon-32x32.png'%}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/deps/favicon/favicon-16x16.png'%}">
-    <link rel="manifest" href="{% static '/deps/favicon/site.webmanifest'%}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'deps/favicon/apple-touch-icon.png'%}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'deps/favicon/favicon-32x32.png'%}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'deps/favicon/favicon-16x16.png'%}">
+    <link rel="manifest" href="{% static 'deps/favicon/site.webmanifest'%}">
 {% endblock %}
 
 
@@ -21,7 +21,7 @@
             <div class="row">
                 <!-- Миниатюры -->
                 <div class="col-md-4">
-                    <img src="{%static '/deps/images/goods/far_cry_3.jpg'%}"
+                    <img src="{%static 'deps/images/goods/far_cry_3.jpg'%}"
                     
                         class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
                 </div>
@@ -38,9 +38,9 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Закрыть"></button>
                             </div>
-            {%for in %}
+
                             <div class="modal-body">
-                                <img src="{% static '/deps/images/goods/far_cry_3.jpg'%}"
+                                <img src="{% static 'deps/images/goods/far_cry_3.jpg'%}"
                                     class="img-fluid" alt="Изображение 1">
                             </div>
                         </div>
@@ -51,9 +51,9 @@
              
             <div class="card-body">
                 <p class="card-text">Цена: <strong>{{product.price}}</strong></p>
-                <h5 class="card-title">Far cry 3</h5>
-                <p class="card-text">Гуляем по острову.</p>
-            {%endfor%}
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.discription}}</p>
+
                 <a href="#" class="btn btn-dark add-to-cart">Добавить в корзину</a>
             </div>
         </div>
