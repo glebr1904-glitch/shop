@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load categories_tags %}
  
 <!DOCTYPE html>
 <html lang="ru">
@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{%static 'deps/css/bootstrap/bootstrap.min.css' %} ">
-<link rel="stylesheet" href="{%static 'deps/css/my_css.css' %} ">
+    <link rel="stylesheet" href="{%static 'deps/css/bootstrap/bootstrap.min.css' %} ">
+    <link rel="stylesheet" href="{%static 'deps/css/my_css.css' %} ">
     <!-- Стиль footer-a для главн ой страницы -->
 {% block css %}{% endblock %}
     <title>{{title}}</title>
@@ -83,9 +83,9 @@
                             height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="{% url 'products:index'%}">Все товары</a></li>
+                        {%get_categories_tag as categories%}
                         {%for category in categories%}
-                          <li><a class="dropdown-item text-white" href="{% url 'products:index'%}">{{category.name}}</a></li>
+                          <li><a class="dropdown-item text-white" href="{% url 'catalog:index' category.slug %}">{{category.name}}</a></li>
                         {%endfor%}
                     </ul>
                 </div>

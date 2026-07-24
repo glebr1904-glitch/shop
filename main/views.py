@@ -6,7 +6,7 @@ def index(request):
     context={
         
         "title":"Главная страница",
-        "header":"Магазин компьютерных игр Game zona",
+        "header":"Магазин световодиодное оборудование DREAM ",
         "categories":categories,
 
     }
