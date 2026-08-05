@@ -1,13 +1,21 @@
 from django.shortcuts import render,get_list_or_404
 from django.core.paginator import Paginator
 from products.models import Product
+from products.utils import q_search
 
-def catalog(request,category_slug):
-    page=request.GET.get('page',1)
-    on_sale=request.GET.get("on_sale", None)
-    order_by=request.GET.get("order_by", None)
-    if category_slug=="all":
+def catalog(request,category_slug=None):
+    query=request.GET.get('q', None)
+    print(query)
+    page = request.GET.get('page', 1)
+    on_sale = request.GET.get("on_sale", None)
+    order_by = request.GET.get("order_by", None)
+
+    if query:
+            products=q_search(query)
+            
+    elif category_slug=="all":
         products=Product.objects.all()
+    
     else:
         products=Product.objects.filter(category__slug=category_slug)
 
